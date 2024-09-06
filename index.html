@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <title>Molly Butler</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!--TOP OF HOME/WORK PAGE-->
+        <div class="top-half" id="TopHalf">
+            <div class="content">
+                <!--TOP NAVIGATION BAR-->
+                <div class="topnav" id="MyTopnav">
+                    <a href="index.html" class="split">
+                        <img src="MBbrand.png" alt="MB" id="MyBrand" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/molly-butler-180b81246/">
+                        <img src="LinkedInLogo.png" alt="in" id="LinkedInIcon" />
+                    </a>
+                    <a href="mailto: mollybutler@gatech.edu">
+                        <img src="EmailIcon.png" alt="email" id="EmailIcon" />
+                    </a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="about.html">About</a>
+                    <a href="index.html" class="active">Work</a>
+                    <a href="javascript:void(0);" class="icon" onclick="navBar()"><i class="fa fa-bars"></i></a>
+                </div>
+                <!--MENU NAVIGATION-->
+                <div class="menu" id="MyMenu">
+                    <a href="index.html" class="active">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <div class="menu-icons">
+                        <a href="mailto: mollybutler@gatech.edu">
+                            <img src="EmailIconFoot.png" alt="email" id="MenuEmailIcon" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/molly-butler-180b81246/" class="inicon">
+                            <img src="MenuLinkedIn.png" alt="in" id="MenuLinkedInIcon" />
+                        </a>
+                    </div>
+                </div>
+                <!--HOME TITLE HEADING-->
+                <div class="hello" id="Title">
+                    <div class="hello-im">
+                        <img src="SunIcon.png" id="SunIcon" />
+                        <a id="Hello">Hello! I'm</a>
+                    </div>
+                    <h2 class="name" id="Molly">Molly Butler,</h2>
+                    <p class="my-description" id="Personal">a student who aims to create <span class="underline-accessible">accessible</span> designs, <span class="underline-playful">playful</span> visualizations, and collaborative communication.</p>
+                </div>
+            </div>
+        </div>
+        <!--CIRCLE AROUND NAME-->
+        <!--<div class="line">
+            <svg viewBox="0 0 600 230">
+                <path d="M30,170 C50,150 400,150 570,160" />
+            </svg>
+        </div>-->
+        <!--BOTTOM OF SCREEN BELOW TITLE-->
+        <div class="bottom-half">
+            <!--MY WORK HEADING-->
+            <!--<div class="work-heading">
+                <a id="WorkHeading">My Work</a>
+                <img src="WorkArrow.png" id="WorkArrow" />
+            </div>-->
+
+            <!--CASE STUDIES-->
+            <div class="case-studies">
+                <!--CASE STUDY 1 - PILLOW -->
+                <div class="project1">
+                    <img src="Pillow.png" alt="pillow" id="Pillow" />
+                    <div class="case-text-a">
+                        <h2 class="pillow-title">Pillow</h2>
+                        <p class="case-description1">Speculative design feature that uses neurological data to visualize user's dreams.</p>
+                        <p class="case-type1">Project type: UI/UX Design Fiction Scenario</p>
+                        <a href="sleep.html"><button class="case-button1">View project</button></a>
+
+                    </div>
+                </div>
+                <!--CASE STUDY 2 - ECOCAR -->
+                <!--<div class="project2">
+
+                    <div class="case-text-b">
+                        <h2 class="ecocar-title">EcoCAR EV Challenge</h2>
+                        <p class="case-description2">Improving Georgia Tech EcoCAR EV Challenge Team's social media engagement.</p>
+                        <p class="case-type2">Project type: Social Media Design & Engagement Strategies</p>
+                        <a href="sleep.html"><button class="case-button2">view project</button></a>
+                    </div>
+                </div>-->
+            </div>
+            <!--FOOTER-->
+            <div class="footer">
+                <p id="Thanks">Thank you for your interest in my work. <span class="connect-underline">Let's connect!</span></p>
+                <a href="mailto: mollybutler@gatech.edu">
+                    <img src="EmailIconFoot.png" alt="email" id="EmailIconFoot" />
+                </a>
+                <a href="https://www.linkedin.com/in/molly-butler-180b81246/">
+                    <img src="LinkedInIconFoot.png" alt="in" id="LinkedInIconFoot" />
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

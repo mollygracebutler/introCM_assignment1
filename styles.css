@@ -1,0 +1,470 @@
+body {
+    background-color: #fcfbe8;
+    margin: 0;
+    width: 100%;
+}
+
+.top-half {
+    background-color: #99c2f8;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 50px;
+}
+
+.top-half::after {
+    content: "";
+    position: absolute;
+    bottom: -50px; 
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: inherit;
+    border-radius: 0% 0% 80% 80%;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.topnav {
+    overflow: hidden;
+    padding-top: 10px;
+}
+  
+.topnav a:not(:first-child) {
+    float: right;
+    color: white;
+    padding-right: 28px;
+    padding-top: 25px;
+    text-decoration: none;
+    text-align: end;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+  
+.topnav a.active {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+  
+.topnav a.split {
+    float: left;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .topnav a:not(:first-child):not(:last-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+        color: white;
+    }
+}
+  
+@media screen and (max-width: 700px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        color: #49494a;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav a:not(:first-child):not(:last-child) {
+        display: none;         
+    }
+    .menu.responsive {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 100px;
+        padding-left: 25px;
+    }
+    .menu.responsive a {
+        padding-bottom: 10px;
+        font-size: 60px;
+        font-family: 'Quicksand', sans-serif;
+        text-decoration: none;
+        color: #49494a;
+    }
+    .menu.responsive .active {
+        text-decoration: underline;
+        text-underline-position: under;
+        text-decoration-thickness: 4px;
+    }
+    .menu.responsive .inicon {
+        padding-left: 10px;
+    }
+    .hello.responsive {
+        display: none;
+    }
+    .about-title.responsive {
+        display: none;
+    }
+}
+
+#MyBrand {
+    width: 85px;
+    height: 75px;
+    padding-left: 20px;
+}
+
+#EmailIcon {
+    width: 26px;
+    height: 24px;
+}
+
+#LinkedInIcon {
+    width: 22px;
+    height: 22px;
+}
+
+.menu-icons {
+    display: inline-flex;
+    padding-left: 8px;
+}
+
+#MenuEmailIcon {
+    width: 40px;
+    height: 35px;
+    padding-right: 15px;
+}
+
+#MenuLinkedInIcon {
+    width: 35px;
+    height: 35px;
+}
+
+.hello {
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.hello-im {
+    padding-top: 50px;
+    display: inline-flex;
+}
+
+#SunIcon {
+    
+    padding-right: 15px;
+    width: 40px;
+    height: 40px;
+    user-select: none;
+}
+
+#Hello {
+    
+    padding-right: 60px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#Molly {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+#Personal {
+    font-size: 25px;
+    max-width: 60%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+@media (max-width: 600px) {
+    #SunIcon {
+        padding-top: 20px;
+        padding-right: 15px;
+        width: 40px;
+        height: 40px;
+        user-select: none;
+    }
+    #Hello {
+        padding-top: 20px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    #Molly {
+        font-size: 13vw;
+        font-weight: bold;
+    }
+
+    
+}
+
+.underline-accessible {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 221, 0);
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+}
+
+.underline-playful {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 221, 0);
+    text-decoration-style: dotted;
+    text-decoration-thickness: 5px;
+    text-underline-position: under;
+}
+
+/*.work-heading {
+    dis
+    align-items: center;
+    width: 100%;
+    padding-top: 125px;
+}
+
+#WorkHeading {
+    text-align: center;
+    color: #49494a;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#WorkArrow {
+    
+    width: 65px;
+    height: 80px;
+    user-select: none;
+}*/
+
+/*ANIMATION AROUND NAME*/
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+}
+.line svg {
+    
+    width: 600px;
+    /*height: 200px;*/
+    height: auto;
+}
+.line path {
+    fill: none;
+    stroke: rgb(255, 221, 0);
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-dasharray: 600; /* Adjust this value based on the path length */
+    stroke-dashoffset: 600; /* Initially hide the path */
+    animation: draw 2s ease-out forwards; /* Adjust the timing of the animation */
+}
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+
+/*FOOTER*/
+
+.footer {
+    text-align: center;
+    padding-bottom: 65px;
+    text-decoration: none;
+}
+
+#Thanks {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #49494a;
+    padding-bottom: 5px;
+}
+
+#EmailIconFoot {
+    width: 30px;
+    height: 26px;
+    padding-right: 10px;
+}
+
+#LinkedInIconFoot {
+    padding-left: 5px;
+    width: 26px;
+    height: 26px;
+}
+
+
+
+/*WORK PAGE - CASE STUDIES DESIGN*/
+
+.case-studies {
+    display: block;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 130px;
+}
+
+.project1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#Pillow {
+    width: 48%;
+    height: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.case-text-a {
+    flex: 1;
+    padding-top: 100px;
+    padding-right: 50px;
+}
+
+.pillow-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 6vw;
+    color: rgb(98, 0, 169);
+    margin: 0;
+}
+
+.case-description1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.3vw;
+    color: #49494a;
+}
+
+.case-type1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8vw;
+    color: #49494a;
+    padding-bottom: 20px;
+}
+
+.case-button1 {
+    background-color: #fcfbe8;
+    color: #49494a;
+    border-radius: 40px;
+    border-color: #49494a;
+    border-width: 3px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.project2 {
+    
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.ecocar-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: #49494a;
+    margin: 0;
+}
+
+.case-description2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    color: #49494a;
+}
+
+.case-type2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    color: #49494a;
+    padding-bottom: 30px;
+}
+
+.case-button2 {
+    background-color: #fcfbe8;
+    color: #49494a;
+    border-radius: 40px;
+    border-color: #49494a;
+    border-width: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 800px) {
+    .project1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    #Pillow {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+    .case-text-a {
+        padding: 50px;
+    }
+}
+
+/*ABOUT PAGE DESIGN*/
+
+.top-half2 {
+    background-color: #99c2f8;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+
+.about-title {
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.underline-about {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 221, 0);
+    text-decoration-style: wavy;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+}
+
+
+
+@media (max-width: 700px) {
+    .about-title {
+        font-size: 7vw;
+    }
+}
